@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -427,6 +427,11 @@
         .config-field.compact input {
             padding: 8px 10px;
             font-size: 12px;
+        }
+
+        .config-field input.input-error {
+            border-color: #ff4444;
+            box-shadow: 0 0 8px rgba(255, 68, 68, 0.55);
         }
 
         .coin-preview {
@@ -1220,11 +1225,11 @@
                         <div class="coin-header"><span class="coin-badge">BTC</span><span class="coin-price">$68,500</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="btc-time" value="15" min="1" max="300">
+                            <input type="number" id="btc-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="btc-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="btc-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="btc-preview"></div>
                     </div>
@@ -1233,11 +1238,11 @@
                         <div class="coin-header"><span class="coin-badge">ETH</span><span class="coin-price">$2,900</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="eth-time" value="18" min="1" max="300">
+                            <input type="number" id="eth-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="eth-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="eth-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="eth-preview"></div>
                     </div>
@@ -1246,11 +1251,11 @@
                         <div class="coin-header"><span class="coin-badge">BNB</span><span class="coin-price">$560</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="bnb-time" value="21" min="1" max="300">
+                            <input type="number" id="bnb-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="bnb-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="bnb-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="bnb-preview"></div>
                     </div>
@@ -1259,11 +1264,11 @@
                         <div class="coin-header"><span class="coin-badge">LTC</span><span class="coin-price">$85</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="ltc-time" value="24" min="1" max="300">
+                            <input type="number" id="ltc-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="ltc-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="ltc-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="ltc-preview"></div>
                     </div>
@@ -1272,11 +1277,11 @@
                         <div class="coin-header"><span class="coin-badge">TRX</span><span class="coin-price">$0.12</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="trx-time" value="28" min="1" max="300">
+                            <input type="number" id="trx-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="trx-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="trx-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="trx-preview"></div>
                     </div>
@@ -1285,11 +1290,11 @@
                         <div class="coin-header"><span class="coin-badge">SOL</span><span class="coin-price">$150</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="sol-time" value="26" min="1" max="300">
+                            <input type="number" id="sol-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="sol-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="sol-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="sol-preview"></div>
                     </div>
@@ -1298,11 +1303,11 @@
                         <div class="coin-header"><span class="coin-badge">XRP</span><span class="coin-price">$0.65</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="xrp-time" value="30" min="1" max="300">
+                            <input type="number" id="xrp-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="xrp-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="xrp-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="xrp-preview"></div>
                     </div>
@@ -1311,11 +1316,11 @@
                         <div class="coin-header"><span class="coin-badge">DOGE</span><span class="coin-price">$0.12</span></div>
                         <div class="config-field compact">
                             <label>Tiempo de acierto (s)</label>
-                            <input type="number" id="doge-time" value="34" min="1" max="300">
+                            <input type="number" id="doge-time" min="1" max="2147483" step="1">
                         </div>
                         <div class="config-field compact">
                             <label>Monto a encontrar (USD)</label>
-                            <input type="text" id="doge-usd" value="0" inputmode="decimal" autocomplete="off">
+                            <input type="text" id="doge-usd" inputmode="decimal" autocomplete="off">
                         </div>
                         <div class="coin-preview" id="doge-preview"></div>
                     </div>
@@ -1324,7 +1329,7 @@
                 <button class="start-btn" id="startBtn" onclick="startSimulation()" disabled>
                     CONTINUAR
                 </button>
-                <div class="config-hint" id="configHint">Cambia el monto de una o más monedas a un valor mayor que cero para incluirlas.</div>
+                <div class="config-hint" id="configHint">Completa tiempo y monto en al menos una moneda. Las filas vacías se ignoran.</div>
             </div>
         </div>
 
@@ -1362,7 +1367,7 @@
                     </div>
                 </section>
 
-                <p class="launch-simulation-note">CryptoSniffer V1.0</p>
+                <p class="launch-simulation-note">By: CryptoSniffer V1.0</p>
 
                 <footer class="launch-actions">
                     <button class="launch-action primary" type="button" onclick="beginConfiguredSearch()">
@@ -1438,7 +1443,7 @@
             </div>
             <div class="btn-right">
                 <button class="btn btn-download" id="downloadBtn" onclick="downloadAllResults()" disabled>
-                    EXPORTAR
+                    DESCARGAR TXT
                 </button>
             </div>
         </div>
@@ -1785,42 +1790,77 @@
         }
 
         function getCryptoSettingsFromInputs() {
-            const defaults = getDefaultCryptoConfig();
             const settings = {};
 
             coinOrder.forEach((symbol) => {
                 const timeInput = document.getElementById(`${symbol.toLowerCase()}-time`);
                 const usdInput = document.getElementById(`${symbol.toLowerCase()}-usd`);
-                const requestedTime = Number(timeInput?.value);
-                const timeToWin = Number.isFinite(requestedTime) && requestedTime > 0
-                    ? requestedTime
-                    : defaults[symbol].timeToWin;
-                const targetUSD = parseUsdInput(usdInput?.value || defaults[symbol].targetUSD || 0);
+                const timeValue = timeInput?.value.trim() || '';
+                const timeToWin = timeValue ? Number(timeValue) : 0;
+                const targetUSD = parseUsdInput(usdInput?.value || '');
                 settings[symbol] = { timeToWin, targetUSD };
             });
 
             return settings;
         }
 
-        function updateCoinPreviews() {
+        function getCryptoInputValidation() {
             const settings = getCryptoSettingsFromInputs();
-            const activeCount = coinOrder.filter((symbol) => Number(settings[symbol]?.targetUSD || 0) > 0).length;
+            let activeCount = 0;
+            let incompleteCount = 0;
+
+            coinOrder.forEach((symbol) => {
+                const timeInput = document.getElementById(`${symbol.toLowerCase()}-time`);
+                const usdInput = document.getElementById(`${symbol.toLowerCase()}-usd`);
+                const timeValue = timeInput?.value.trim() || '';
+                const usdValue = usdInput?.value.trim() || '';
+                const rowStarted = Boolean(timeValue || usdValue);
+                const time = Number(timeValue);
+                const validTime = Number.isInteger(time) && time >= 1 && time <= 2147483;
+                const amount = settings[symbol].targetUSD;
+                const validAmount = usdValue !== '' && Number.isFinite(amount) && amount > 0;
+
+                if (rowStarted && (!validTime || !validAmount)) {
+                    incompleteCount++;
+                } else if (rowStarted) {
+                    activeCount++;
+                }
+
+                if (timeInput) {
+                    const invalid = rowStarted && !validTime;
+                    timeInput.classList.toggle('input-error', invalid);
+                    timeInput.setAttribute('aria-invalid', String(invalid));
+                }
+                if (usdInput) {
+                    const invalid = rowStarted && !validAmount;
+                    usdInput.classList.toggle('input-error', invalid);
+                    usdInput.setAttribute('aria-invalid', String(invalid));
+                }
+            });
+
+            return { settings, activeCount, incompleteCount };
+        }
+
+        function updateCoinPreviews() {
+            const { settings, activeCount, incompleteCount } = getCryptoInputValidation();
             coinOrder.forEach((symbol) => {
                 const meta = getCoinMeta(symbol);
                 const targetUSD = Number(settings[symbol]?.targetUSD || 0);
                 const amount = targetUSD > 0 ? (targetUSD / meta.price) : 0;
                 const preview = document.getElementById(`${symbol.toLowerCase()}-preview`);
                 if (preview) {
-                    preview.textContent = targetUSD > 0 ? `≈ ${formatCryptoAmount(symbol, amount)} ${symbol}` : '≈ 0.00';
+                    preview.textContent = targetUSD > 0 ? `≈ ${formatCryptoAmount(symbol, amount)} ${symbol}` : '';
                 }
             });
             const startButton = document.getElementById('startBtn');
             const hint = document.getElementById('configHint');
-            if (startButton) startButton.disabled = activeCount === 0;
+            if (startButton) startButton.disabled = activeCount === 0 || incompleteCount > 0;
             if (hint) {
-                hint.textContent = activeCount > 0
-                    ? `${activeCount} red${activeCount === 1 ? '' : 'es'} seleccionada${activeCount === 1 ? '' : 's'} (monto mayor que cero).`
-                    : 'Cambia el monto de una o más monedas a un valor mayor que cero para incluirlas.';
+                hint.textContent = incompleteCount > 0
+                    ? 'Completa los campos marcados en rojo; las filas vacías se ignoran.'
+                    : activeCount > 0
+                        ? `${activeCount} moneda${activeCount === 1 ? '' : 's'} lista${activeCount === 1 ? '' : 's'} para la simulación.`
+                        : 'Completa tiempo y monto en al menos una moneda. Las filas vacías se ignoran.';
             }
             updateWalletSearchCoins();
             updateButtons();
@@ -2226,8 +2266,8 @@
             const continueBtn = document.getElementById('continueBtn');
             const stopBtn = document.getElementById('stopBtn');
             const downloadBtn = document.getElementById('downloadBtn');
-            const settings = getCryptoSettingsFromInputs();
-            const hasActiveCoins = coinOrder.some((symbol) => Number(settings[symbol]?.targetUSD || 0) > 0);
+            const { activeCount, incompleteCount } = getCryptoInputValidation();
+            const hasActiveCoins = activeCount > 0 && incompleteCount === 0;
             
             if (isRunning) {
                 continueBtn.disabled = true;
@@ -2260,8 +2300,8 @@
         }
         
         function startSimulation() {
-            const settings = getCryptoSettingsFromInputs();
-            if (!coinOrder.some((symbol) => Number(settings[symbol]?.targetUSD || 0) > 0)) return;
+            const { settings, activeCount, incompleteCount } = getCryptoInputValidation();
+            if (activeCount === 0 || incompleteCount > 0) return;
             config = {
                 cryptoSettings: settings,
                 targetUSD: settings.BTC?.targetUSD || 0
@@ -2277,6 +2317,21 @@
 
             document.getElementById('launchScreen').classList.add('hidden');
             runConfiguredSearch(settings);
+        }
+
+        function scheduleWinTimeout(symbol, delayMs, onWin) {
+            const deadline = performance.now() + delayMs;
+            const checkDeadline = () => {
+                const remainingMs = deadline - performance.now();
+                if (remainingMs <= 0) {
+                    onWin();
+                    return;
+                }
+
+                winTimeouts[symbol] = setTimeout(checkDeadline, Math.ceil(remainingMs));
+            };
+
+            checkDeadline();
         }
 
         function runConfiguredSearch(settings) {
@@ -2299,7 +2354,7 @@
 
             activeCoins.forEach((symbol) => {
                 const delay = Number(settings[symbol].timeToWin) * 1000;
-                winTimeouts[symbol] = setTimeout(() => {
+                scheduleWinTimeout(symbol, delay, () => {
                     if (!isRunning || !pendingHits.has(symbol)) return;
 
                     const validData = generateLine(true, symbol);
@@ -2340,8 +2395,8 @@
         function continueSearching() {
             if (isRunning) return;
             
-            const settings = getCryptoSettingsFromInputs();
-            if (!coinOrder.some((symbol) => Number(settings[symbol]?.targetUSD || 0) > 0)) return;
+            const { settings, activeCount, incompleteCount } = getCryptoInputValidation();
+            if (activeCount === 0 || incompleteCount > 0) return;
             config = {
                 cryptoSettings: settings,
                 targetUSD: settings.BTC?.targetUSD || 0
